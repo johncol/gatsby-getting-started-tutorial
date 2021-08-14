@@ -1,29 +1,18 @@
 import * as React from 'react';
 import Layout from '../components/layout';
+import { heading, accent } from './index.module.css';
 
-const headingAccentStyles = {
-  color: '#663399',
-};
+const Heading = () => (
+  <h1 className={heading}>
+    Congratulations
+    <br />
+    <span className={accent}>— nice Gatsby site!</span>
+  </h1>
+);
 
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-};
-
-// markup
 const IndexPage = () => {
   return (
-    <Layout
-      title="Home"
-      heading={
-        <h1 style={headingStyles}>
-          Congratulations
-          <br />
-          <span style={headingAccentStyles}>— nice Gatsby site! </span>
-        </h1>
-      }
-    >
+    <Layout title="Home" heading={<Heading />}>
       <p>This is the home page for my first Gatsby project.</p>
     </Layout>
   );
