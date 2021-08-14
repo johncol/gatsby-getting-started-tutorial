@@ -1,0 +1,22 @@
+.navigation {
+  margin: 30px 0 100px;
+}
+
+.navigation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-link {
+  margin: 10px 30px 10px 0;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation-link:hover {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 3px;
+}

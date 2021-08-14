@@ -1,0 +1,24 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  max-width: 820px;
+  padding: 0 30px 0 96px;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+  color: #444;
+  transition: padding 0.25s ease-in;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 64px;
+  color: #663399;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding-left: 30px;
+  }
+}
