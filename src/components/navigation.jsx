@@ -5,6 +5,7 @@ import { navigation, navigationList, navigationLink } from './navigation.module.
 const links = [
   { text: 'Home', to: '/' },
   { text: 'About', to: '/about' },
+  { text: 'Static Image', to: '/static-image-sample' },
 ];
 
 const Navigation = () => {
