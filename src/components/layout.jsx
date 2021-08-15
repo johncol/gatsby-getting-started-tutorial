@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import { Navigation } from './navigation';
 import { container, heading as headingClass } from './layout.module.css';
+import './layout.css';
 
 const QUERY_TITLE = graphql`
   query {
