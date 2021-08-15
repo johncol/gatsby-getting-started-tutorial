@@ -8,7 +8,7 @@ const IndexHeading = () => {
 
 const IndexPage = () => {
   return (
-    <Layout title="Home" heading={<IndexHeading />}>
+    <Layout heading={<IndexHeading />}>
       <p>This is the home page for my first Gatsby project.</p>
     </Layout>
   );

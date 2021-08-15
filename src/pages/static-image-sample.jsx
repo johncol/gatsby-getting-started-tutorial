@@ -9,7 +9,7 @@ const StaticImageHeading = () => {
 
 const StaticImageSample = () => {
   return (
-    <Layout title="How to use StaticImage?" heading={<StaticImageHeading />}>
+    <Layout heading={<StaticImageHeading />}>
       <StaticImage
         src="./../images/jill-valentine.webp"
         alt="Jill Valentine from Resident Evil 3"

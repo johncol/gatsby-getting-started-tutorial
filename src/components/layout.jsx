@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Navigation from './navigation';
-import { container, heading } from './layout.module.css';
+import { container, heading as headingClass } from './layout.module.css';
 
 const QUERY_TITLE = graphql`
   query {
@@ -13,7 +13,7 @@ const QUERY_TITLE = graphql`
   }
 `;
 
-const Layout = ({ heading: headingFragment, children }) => {
+const Layout = ({ heading, children }) => {
   const data = useStaticQuery(QUERY_TITLE);
   const { title } = data.site.siteMetadata;
   return (
@@ -21,7 +21,7 @@ const Layout = ({ heading: headingFragment, children }) => {
       <title>{title}</title>
       <Navigation />
       <main>
-        {headingFragment ? headingFragment : <h1 className={heading}>{title}</h1>}
+        {typeof heading === 'string' ? <h1 className={headingClass}>{heading}</h1> : heading}
 
         {children}
       </main>
