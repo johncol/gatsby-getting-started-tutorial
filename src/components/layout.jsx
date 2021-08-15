@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Navigation from './navigation';
+import { Navigation } from './navigation';
 import { container, heading as headingClass } from './layout.module.css';
 
 const QUERY_TITLE = graphql`
@@ -29,4 +29,4 @@ const Layout = ({ heading, children }) => {
   );
 };
 
-export default Layout;
+export { Layout };

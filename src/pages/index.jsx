@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Heading from '../components/heading';
-import Layout from '../components/layout';
+import { Heading } from './../components/heading';
+import { Layout } from './../components/layout';
 
 const IndexHeading = () => {
   return <Heading mainText="Congratulations" accentText="— nice Gatsby site!" />;

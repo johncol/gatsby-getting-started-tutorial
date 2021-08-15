@@ -1,15 +1,11 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
-import Layout from '../components/layout';
-
-const paragraphStyles = {
-  marginBottom: 48,
-};
+import { Layout } from '../components/layout';
 
 const NotFoundPage = () => {
   return (
     <Layout title="Page Not Found">
-      <p style={paragraphStyles}>
+      <p style={{ marginBottom: 48 }}>
         Sorry{' '}
         <span role="img" aria-label="Pensive emoji">
           😔

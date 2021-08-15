@@ -12,4 +12,4 @@ const Heading = ({ mainText, accentText }) => {
   );
 };
 
-export default Heading;
+export { Heading };
