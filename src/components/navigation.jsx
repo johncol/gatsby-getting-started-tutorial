@@ -6,7 +6,7 @@ const links = [
   { text: 'Home', to: '/' },
   { text: 'About', to: '/about' },
   { text: 'Static Image', to: '/static-image-sample' },
-  { text: 'Blog', to: '/blog' },
+  { text: 'Blogs', to: '/blogs' },
 ];
 
 const Navigation = () => {
