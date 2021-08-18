@@ -1,14 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Layout } from '../components/layout';
-import { BlogPost } from '../components/blog-post';
+import { Layout } from './../../components/layout';
+import { BlogPostPreview } from './../../components/blog-post-preview';
 
 const BLOGS_QUERY = graphql`
   query {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
       nodes {
         id
-        body
+        slug
         frontmatter {
           author
           title
@@ -25,7 +25,7 @@ const BlogsPage = ({ data }) => {
   return (
     <Layout heading="Blogs">
       {blogs.map((blog) => (
-        <BlogPost blog={blog} key={blog.id} />
+        <BlogPostPreview blog={blog} key={blog.id} />
       ))}
     </Layout>
   );
