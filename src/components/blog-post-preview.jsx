@@ -10,8 +10,8 @@ const BlogPostPreview = ({ blog }) => {
   } = blog;
 
   return (
-    <Link to={`/blogs/${slug}`} className={previewLink}>
-      <article id={id} className={preview}>
+    <Link to={`/blogs/${slug}`} className={`${previewLink} ${preview}`}>
+      <article id={id}>
         <h2 className={previewHeading}>{title}</h2>
         <i>
           Written on {date} by <strong>{author}</strong>

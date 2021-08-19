@@ -12,6 +12,14 @@ const BLOG_BY_ID_QUERY = graphql`
         title
         author
         date(formatString: "MMMM D, YYYY")
+        hero_image_alt
+        hero_image_credit_link
+        hero_image_credit_text
+        hero_image {
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
       }
     }
   }

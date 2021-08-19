@@ -1,6 +1,25 @@
 .blog-post {
   margin-bottom: 30px;
-  max-width: 800px;
-  padding: 35px 30px;
-  background-color: rgb(103 58 183 / 7%);
+}
+
+.blog-title {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.blog-metadata {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.hero-figure {
+  margin: 0;
+}
+
+.hero-caption {
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: right;
 }
