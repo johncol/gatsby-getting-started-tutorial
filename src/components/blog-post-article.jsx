@@ -1,9 +1,9 @@
 import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import { blogPost, heroFigure, heroCaption, blogTitle, blogMetadata } from './blog-post.module.css';
+import { blogPost, heroFigure, heroCaption, blogTitle, blogMetadata } from './blog-post-article.module.css';
 
-const BlogPost = ({ blog }) => {
+const BlogPostArticle = ({ blog }) => {
   const {
     frontmatter: { date, title, author, ...frontmatter },
     body,
@@ -40,4 +40,4 @@ const BlogPost = ({ blog }) => {
   );
 };
 
-export { BlogPost };
+export { BlogPostArticle };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { Layout } from './../../components/layout';
-import { BlogPost as BlogPostComponent } from './../../components/blog-post';
+import { BlogPostArticle } from '../../components/blog-post-article';
 
 const BLOG_BY_ID_QUERY = graphql`
   query ($id: String) {
@@ -28,7 +28,7 @@ const BLOG_BY_ID_QUERY = graphql`
 const BlogPost = ({ data }) => {
   return (
     <Layout>
-      <BlogPostComponent blog={data.mdx} />
+      <BlogPostArticle blog={data.mdx} />
     </Layout>
   );
 };
